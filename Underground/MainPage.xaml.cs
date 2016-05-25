@@ -22,16 +22,6 @@ namespace Underground
             // HamburgerButton.IsChecked = true;
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
 
-            //if (MySplitView.IsPaneOpen)
-            //{
-            //    MySplitView.IsPaneOpen = false;
-
-            //}
-            //else
-            //{
-            //    MySplitView.IsPaneOpen = true;
-            //    HamburgerButton.IsChecked = true;
-            //}
         }
 
         private async void IconListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
