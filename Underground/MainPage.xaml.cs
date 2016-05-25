@@ -19,8 +19,7 @@ namespace Underground
 
         private void HamburgerButton_OnClick(object sender, RoutedEventArgs e)
         {
-            // HamburgerButton.IsChecked = true;
-            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+           MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
 
         }
 
@@ -28,7 +27,6 @@ namespace Underground
         {
             var res = await tflFacade.GetTubeStatusAsync();
             MySplitView.IsPaneOpen = false;
-
             var selection = IconListBox.SelectedIndex.ToString();
             try
             {
@@ -48,7 +46,6 @@ namespace Underground
                             ReasonTextBlock.Text = "";
                         }
                         break;
-
                     //Central line
                     case "1":
                         MyMainGrid.Background = new SolidColorBrush(Colors.DarkRed);
@@ -223,21 +220,12 @@ namespace Underground
             catch
             {
             }
-//            if (FirstListBoxItem.IsSelected)
-//            {
-//                DetailsTextBlock.Text = "First Item";
-//            }
-//            else if (SecondListBoxItem.IsSelected)
-//            {
-//                DetailsTextBlock.Text = "Second Item";
-//            }
         }
 
         private void MySplitView_PaneClosed(SplitView sender, object args)
         {
-            //HamburgerButton.IsChecked = false;
+         
         }
-
         private void MainPage_OnLoaded(object sender, RoutedEventArgs e)
         {
         }
