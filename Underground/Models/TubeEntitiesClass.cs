@@ -9,7 +9,6 @@ namespace Underground.Models
 
     public class RootArray
     {
-
         public string type { get; set; }
         public string id { get; set; }
         public string name { get; set; }
@@ -20,16 +19,16 @@ namespace Underground.Models
         public Linestatus[] lineStatuses { get; set; }
         public Routesection[] routeSections { get; set; }
         public Servicetype[] serviceTypes { get; set; }
-        //public string type { get; set; }
-        //public string id { get; set; }
-        //public string name { get; set; }
-        //public string modeName { get; set; }
-        //public object[] disruptions { get; set; }
-        //public DateTime created { get; set; }
-        //public DateTime modified { get; set; }
-        //public Linestatus[] lineStatuses { get; set; }
-        //public object[] routeSections { get; set; }
         //public Servicetype[] serviceTypes { get; set; }
+        //public object[] routeSections { get; set; }
+        //public Linestatus[] lineStatuses { get; set; }
+        //public DateTime modified { get; set; }
+        //public DateTime created { get; set; }
+        //public object[] disruptions { get; set; }
+        //public string modeName { get; set; }
+        //public string name { get; set; }
+        //public string id { get; set; }
+        //public string type { get; set; }
     }
 
     public class Linestatus
@@ -43,13 +42,13 @@ namespace Underground.Models
         public string lineId { get; set; }
         public string reason { get; set; }
         public Disruption disruption { get; set; }
+        //public object[] validityPeriods { get; set; }
+        //public DateTime created { get; set; }
+        //public string statusSeverityDescription { get; set; }
+        //public int statusSeverity { get; set; }
+        //public int id { get; set; }
 
         //public string type { get; set; }
-        //public int id { get; set; }
-        //public int statusSeverity { get; set; }
-        //public string statusSeverityDescription { get; set; }
-        //public DateTime created { get; set; }
-        //public object[] validityPeriods { get; set; }
     }
 
     public class Disruption

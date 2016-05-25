@@ -4,7 +4,7 @@
     "id": "bakerloo",
     "name": "Bakerloo",
     "modeName": "tube",
-    "disruptions": [ ],
+    "disruptions": [],
     "created": "2016-05-10T15:41:47.997",
     "modified": "2016-05-10T15:41:47.997",
     "lineStatuses": [
@@ -14,10 +14,10 @@
         "statusSeverity": 10,
         "statusSeverityDescription": "Good Service",
         "created": "0001-01-01T00:00:00",
-        "validityPeriods": [ ]
+        "validityPeriods": []
       }
     ],
-    "routeSections": [ ],
+    "routeSections": [],
     "serviceTypes": [
       {
         "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
@@ -31,7 +31,7 @@
     "id": "central",
     "name": "Central",
     "modeName": "tube",
-    "disruptions": [ ],
+    "disruptions": [],
     "created": "2016-05-10T15:41:48.45",
     "modified": "2016-05-10T15:41:48.45",
     "lineStatuses": [
@@ -41,10 +41,10 @@
         "statusSeverity": 10,
         "statusSeverityDescription": "Good Service",
         "created": "0001-01-01T00:00:00",
-        "validityPeriods": [ ]
+        "validityPeriods": []
       }
     ],
-    "routeSections": [ ],
+    "routeSections": [],
     "serviceTypes": [
       {
         "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",

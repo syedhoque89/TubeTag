@@ -11,17 +11,17 @@
 
     <Grid Name="MyMainGrid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <Button Name="HamburgerButton" 
+            <Button Name="HamburgerButton"
                     FontFamily="Segoe MDL2 Assets"
                     Content="&#xE700;"
                     FontSize="36"
                     Click="HamburgerButton_OnClick"
-                    Background="#33270303" 
+                    Background="#33270303"
                     HorizontalAlignment="Center">
                 <!--<Button.RenderTransform>
                     <CompositeTransform Rotation="0"/>
@@ -29,173 +29,172 @@
             </Button>
         </RelativePanel>
 
-        <SplitView Name="MySplitView" 
-                   DisplayMode="CompactOverlay" 
-                   OpenPaneLength="250" 
-                   CompactPaneLength="56" 
+        <SplitView Name="MySplitView"
+                   DisplayMode="CompactOverlay"
+                   OpenPaneLength="250"
+                   CompactPaneLength="56"
                    HorizontalAlignment="Left"
-                   Grid.Row="1" 
-                   PaneClosed="MySplitView_PaneClosed" Width="360"
-                   >
+                   Grid.Row="1"
+                   PaneClosed="MySplitView_PaneClosed" Width="360">
             <SplitView.Pane>
                 <ListBox SelectionMode="Single"
-                     Name="IconListBox"
-                     SelectionChanged="IconListBox_OnSelectionChanged">
+                         Name="IconListBox"
+                         SelectionChanged="IconListBox_OnSelectionChanged">
 
                     <ListBoxItem Name="Bakerloo">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30" 
-                                   HorizontalAlignment="Center"
-                                   Foreground="#AE6118"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#AE6118"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Bakerloo"/>
+                                       Text="Bakerloo" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Central">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#E41F1F"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#E41F1F"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Central"/>
+                                       Text="Central" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Circle">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#F8D42D"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#F8D42D"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Circle"/>
+                                       Text="Circle" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="District">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#007229"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#007229"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="District"/>
+                                       Text="District" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="DLR">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#00BBB4"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#00BBB4"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="DLR"/>
+                                       Text="DLR" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Hammersmith">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#E899A8"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#E899A8"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Hammersmith"/>
+                                       Text="Hammersmith" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Jubilee">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#686E72"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#686E72"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Jubilee"/>
+                                       Text="Jubilee" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Metropolitan">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#893267"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#893267"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Metropolitan"/>
+                                       Text="Metropolitan" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Northern">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30" 
-                                   HorizontalAlignment="Center"
-                                   Foreground="#000000"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#000000"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Northern"/>
+                                       Text="Northern" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Overground">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#F86C00"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#F86C00"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Overground"/>
+                                       Text="Overground" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Piccadilly">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#0450A1"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#0450A1"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Piccadilly"/>
+                                       Text="Piccadilly" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Victoria">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#009FE0"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#009FE0"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Victoria"/>
+                                       Text="Victoria" />
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="Waterloo">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
-                                   FontSize="30"
-                                   HorizontalAlignment="Center"
-                                   Foreground="#70C3CE"
-                                   Text="&#xEB4D;"/>
+                                       FontSize="30"
+                                       HorizontalAlignment="Center"
+                                       Foreground="#70C3CE"
+                                       Text="&#xEB4D;" />
                             <TextBlock FontSize="20"
                                        Margin="20,0,0,0"
-                                       Text="Waterloo"/>
+                                       Text="Waterloo" />
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
@@ -207,14 +206,14 @@
             <Grid Background="Transparent"
                   Name="ResultGrid">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" 
+                <TextBlock Grid.Row="0"
                            Grid.Column="0"
                            Text="Title"
                            TextWrapping="Wrap"
@@ -223,8 +222,8 @@
                            FontWeight="Bold"
                            HorizontalAlignment="Left"
                            VerticalAlignment="Top"
-                           Margin="10,10,5,0"/>
-                <TextBlock Grid.Row="1" 
+                           Margin="10,10,5,0" />
+                <TextBlock Grid.Row="1"
                            Name="DetailsTextBlock"
                            Text="Details"
                            TextWrapping="Wrap"
@@ -232,17 +231,16 @@
                            FontStyle="Italic"
                            Margin="10,3,5,3"
                            VerticalAlignment="Top"
-                           HorizontalAlignment="Left"/>
-                <TextBlock Grid.Row="2" 
+                           HorizontalAlignment="Left" />
+                <TextBlock Grid.Row="2"
                            Name="ReasonTextBlock"
                            Text="Reason"
                            TextWrapping="Wrap"
                            FontSize="20"
                            Margin="10,3,5,10"
-                           HorizontalAlignment="Left" 
-                           VerticalAlignment="Top" 
-                           TextAlignment="Left"
-                           />
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           TextAlignment="Left" />
             </Grid>
 
         </SplitView>
